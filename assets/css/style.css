@@ -94,6 +94,13 @@ footer{
     opacity:1;
 }
 
+footer a{
+    color:#fff;
+}
+footer a:hover{
+    color:#ccc;
+}
+
 /*** ANIMATED TYPING ***/
 .typed-cursor{
     opacity: 1;
