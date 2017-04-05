@@ -57,8 +57,9 @@ $(document).ready(function() {
 
         var data = $('.form').serializeArray();
 
-        data['emailto'] = 'contact@antoine.kim';
-        data['sitefrom'] = 'antoine.kim';
+        data.push({'name':'emailto','value':'contact@antoine.kim'});
+        data.push({'name':'sitefrom','value':'antoine.kim'});
+        console.log(data);
 
         $.ajax({
             data: data,
