@@ -52,6 +52,26 @@ $(document).ready(function() {
             }
         })
     ;
+
+    $('.submit-form').click(function(){
+
+        var data = $('.form').serializeArray();
+
+        data['emailto'] = 'contact@antoine.kim';
+        data['sitefrom'] = 'antoine.kim';
+
+        $.ajax({
+            data: data,
+            type: "POST",
+            url: "http://37.187.20.149:3000/sendMail",
+            success: function(data){
+                alert(data.responseDesc);
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                console.log(xhr);
+            }
+        });
+    });
 });
 
 /* ANIMATED TYPING */

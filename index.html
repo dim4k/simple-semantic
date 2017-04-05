@@ -74,7 +74,7 @@
             Contact
         </div>
         <div class="content">
-            <div class="ui error form">
+            <form class="ui error form">
                 <div class="required field">
                     <label>Name</label>
                     <div class="two fields">
@@ -92,14 +92,14 @@
                 </div>
                 <div class="required field">
                     <label>Message</label>
-                    <textarea></textarea>
+                    <textarea name="message"></textarea>
                 </div>
                 <div class="g-recaptcha" data-sitekey="6LfilhsUAAAAALWpofuCD0R5uehZFvspG_2Mj9bW"></div>
-            </div>
+            </form>
         </div>
         <div class="actions">
             <div class="ui labeled icon black cancel button"><i class="remove icon"></i>Cancel</div>
-            <div class="ui positive animated button" tabindex="0">
+            <div class="ui positive animated button submit-form" tabindex="0">
                 <div class="visible content">Send</div>
                 <div class="hidden content">
                     <i class="send icon"></i>
