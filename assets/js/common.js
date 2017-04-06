@@ -74,7 +74,7 @@ $(document).ready(function() {
             type: "POST",
             url: "http://37.187.20.149:3000/sendMail",
             success: function(data){
-                $('.small.modal.callback')
+                $('.modal.callback')
                     .modal('show')
                 ;
                 $('.callback-message').html(data.responseDesc);
