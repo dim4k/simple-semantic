@@ -65,7 +65,6 @@ $(document).ready(function() {
         var data = $('.form').serializeArray();
 
         data.push({'name':'website','value':'antoine.kim'});
-        console.log(data);
 
         $.ajax({
             data: data,
