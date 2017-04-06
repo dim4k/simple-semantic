@@ -50,8 +50,15 @@ $(document).ready(function() {
                     ]
                 }
             }
-        })
-    ;
+        });
+
+    $('.ui.form').keyup(function(){
+        if ( $('.ui.form').form('is valid') ) {
+            $('.submit-form').removeClass('disabled');
+        }else{
+            $('.submit-form').addClass('disabled');
+        }
+    });
 
     $('.submit-form').click(function(){
 
