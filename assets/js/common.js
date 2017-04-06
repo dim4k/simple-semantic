@@ -2,6 +2,9 @@ $(document).ready(function() {
     /* CONTACT MODAL */
     $('.contact-me').click(function(){
             $('.modal.contact')
+                .modal({
+                    blurring: true
+                })
                 .modal('setting', 'transition', 'fade down')
                 .modal('show');
         });
@@ -71,7 +74,10 @@ $(document).ready(function() {
             type: "POST",
             url: "http://37.187.20.149:3000/sendMail",
             success: function(data){
-                alert(data.responseDesc);
+                $('.small.modal.callback')
+                    .modal('show')
+                ;
+                $('.callback-message').html(data.responseDesc);
             },
             error: function (xhr, ajaxOptions, thrownError) {
                 console.log(xhr);
