@@ -2,9 +2,6 @@ $(document).ready(function() {
     /* CONTACT MODAL */
     $('.contact-me').click(function(){
             $('.modal.contact')
-                .modal({
-                    blurring: true
-                })
                 .modal('setting', 'transition', 'fade down')
                 .modal('show');
         });
