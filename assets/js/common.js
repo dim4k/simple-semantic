@@ -69,7 +69,7 @@ $(document).ready(function() {
         $.ajax({
             data: data,
             type: "POST",
-            url: "http://37.187.20.149:3000/sendMail",
+            url: "http://localhost:3000/sendMail",
             success: function(data){
                 $('.modal.callback')
                     .modal('show')
