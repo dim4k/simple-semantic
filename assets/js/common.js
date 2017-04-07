@@ -80,7 +80,10 @@ $(document).ready(function() {
                 $('.callback-message').html(data.responseDesc);
             },
             error: function (xhr, ajaxOptions, thrownError) {
-                console.log(xhr);
+                $('.modal.callback')
+                    .modal('show')
+                ;
+                $('.callback-message').html("Couldn't reach the server");
             }
         });
     });
