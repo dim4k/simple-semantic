@@ -52,6 +52,8 @@ $(document).ready(function() {
             }
         });
 
+
+    /* FORM VALIDATION */
     $('.ui.form').keyup(function(){
         if ( $('.ui.form').form('is valid') ) {
             $('.submit-form').removeClass('disabled');
@@ -60,6 +62,7 @@ $(document).ready(function() {
         }
     });
 
+    /* MAIL SERVER CALL */
     $('.submit-form').click(function(){
 
         var data = $('.form').serializeArray();
